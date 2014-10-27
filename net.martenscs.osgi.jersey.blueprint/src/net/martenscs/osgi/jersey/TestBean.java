@@ -2,9 +2,6 @@ package net.martenscs.osgi.jersey;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * @author Pavel Bucek (pavel.bucek at oracle.com)
- */
 @XmlRootElement
 public class TestBean {
 	public String a;

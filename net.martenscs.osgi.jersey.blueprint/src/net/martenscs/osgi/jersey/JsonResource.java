@@ -7,9 +7,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-/**
- * @author Pavel Bucek (pavel.bucek at oracle.com)
- */
+
 @Path("/test")
 public class JsonResource {
 

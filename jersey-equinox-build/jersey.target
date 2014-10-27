@@ -1,192 +1,203 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.8"?>
 
-<target name="jersey" sequenceNumber="31">
+<target name="jersey" sequenceNumber="45">
 <locations>
-<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.osgi.web.source.feature.group" version="1.0.0.201409221907"/>
-<unit id="org.equinox.osgi.runtime.feature.group" version="0.0.1.201409221907"/>
-<unit id="org.eclipse.osgi.web.feature.group" version="1.0.0.201409221907"/>
-<repository location="http://p2.martenscs.net/equinox-runtime"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="com.eclipsesource.jaxrs.connector.feature.feature.group" version="4.1.1.201407131319"/>
-<repository location="http://hstaudacher.github.io/osgi-jax-rs-connector"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="com.eclipsesource.jaxrs.provider.gson.feature.feature.group" version="2.0.0.201407131319"/>
-<unit id="com.eclipsesource.jaxrs.provider.moxy.feature.feature.group" version="2.0.0.201407131319"/>
-<unit id="com.eclipsesource.jaxrs.provider.multipart.feature.feature.group" version="2.0.0.201407131319"/>
-<unit id="com.eclipsesource.jaxrs.provider.security.feature.feature.group" version="2.0.0.201407131319"/>
-<unit id="com.eclipsesource.jaxrs.provider.sse.feature.feature.group" version="2.0.0.201407131319"/>
-<repository location="http://hstaudacher.github.io/osgi-jax-rs-connector"/>
-</location>
 <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="aries.feature.group" version="3.0.1"/>
 <unit id="aries.source.feature.group" version="3.0.1"/>
 <repository location="http://p2.martenscs.net/karaf/framework/3.0.1"/>
 </location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.eclipsesource.jaxrs.provider.gson.feature.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.gson.feature.source.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.moxy.feature.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.moxy.feature.source.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.multipart.feature.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.multipart.feature.source.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.connector.feature.feature.group" version="4.1.1.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.connector.feature.source.feature.group" version="4.1.1.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.security.feature.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.security.feature.source.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.sse.feature.feature.group" version="2.0.0.201407131319"/>
+<unit id="com.eclipsesource.jaxrs.provider.sse.feature.source.feature.group" version="2.0.0.201407131319"/>
+<repository location="http://hstaudacher.github.io/osgi-jax-rs-connector"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.osgi.web.source.feature.group" version="1.0.0.201410081534"/>
+<unit id="org.equinox.osgi.runtime.feature.group" version="0.0.1.201410081534"/>
+<unit id="org.eclipse.osgi.web.feature.group" version="1.0.0.201410081534"/>
+<repository location="http://p2.martenscs.net/equinox-runtime"/>
+</location>
 </locations>
 <includeBundles>
-<plugin id="org.eclipse.jetty.deploy.source"/>
-<plugin id="org.eclipse.jetty.monitor.source"/>
-<plugin id="org.apache.taglibs.standard.glassfish.source"/>
-<plugin id="org.apache.aries.blueprint.core.source"/>
-<plugin id="org.eclipse.jetty.rewrite"/>
-<plugin id="org.apache.jasper.glassfish.source"/>
-<plugin id="com.eclipsesource.jaxrs.provider.security"/>
-<plugin id="org.eclipse.equinox.registry"/>
-<plugin id="org.eclipse.jetty.http.source"/>
-<plugin id="org.apache.aries.proxy.impl"/>
-<plugin id="org.objectweb.asm.all.source"/>
-<plugin id="com.eclipsesource.jaxrs.provider.multipart"/>
-<plugin id="org.eclipse.jetty.util"/>
-<plugin id="org.eclipse.jetty.annotations.source"/>
-<plugin id="org.eclipse.jetty.client"/>
-<plugin id="org.eclipse.jetty.jaspi"/>
-<plugin id="org.eclipse.core.filesystem.win32.x86_64"/>
-<plugin id="org.eclipse.equinox.common"/>
-<plugin id="org.eclipse.osgi.services" version="3.3.100.v20120522-1822"/>
-<plugin id="org.eclipse.equinox.util"/>
-<plugin id="com.eclipsesource.jaxrs.provider.multipart.source"/>
-<plugin id="org.apache.aries.blueprint.core.compatibility"/>
-<plugin id="org.eclipse.jetty.webapp.source"/>
-<plugin id="org.eclipse.jetty.websocket"/>
-<plugin id="com.google.gson" version="2.1.0.v201203072145"/>
-<plugin id="com.eclipsesource.jaxrs.publisher"/>
-<plugin id="javax.el"/>
-<plugin id="ch.qos.logback.slf4j"/>
-<plugin id="com.eclipsesource.jaxrs.provider.security.source"/>
-<plugin id="org.eclipse.equinox.console"/>
-<plugin id="org.eclipse.jetty.rewrite.source"/>
-<plugin id="org.eclipse.persistence.antlr.source"/>
-<plugin id="com.eclipsesource.jaxrs.provider.sse"/>
-<plugin id="org.apache.aries.blueprint.cm"/>
-<plugin id="org.eclipse.equinox.http.registry.source"/>
-<plugin id="javax.security.auth.message"/>
-<plugin id="org.eclipse.jetty.continuation.source"/>
-<plugin id="org.eclipse.jetty.websocket.source"/>
-<plugin id="org.eclipse.core.commands"/>
-<plugin id="org.eclipse.jetty.client.source"/>
-<plugin id="org.eclipse.jetty.osgi.httpservice"/>
-<plugin id="org.eclipse.equinox.http.servlet.source"/>
-<plugin id="com.eclipsesource.jaxrs.provider.sse.source"/>
-<plugin id="org.objectweb.asm.all"/>
-<plugin id="org.eclipse.jetty.ajp"/>
-<plugin id="org.eclipse.jetty.jaspi.source"/>
-<plugin id="org.eclipse.equinox.http.jetty.source"/>
-<plugin id="org.eclipse.persistence.antlr"/>
-<plugin id="org.eclipse.core.contenttype"/>
-<plugin id="javax.mail"/>
-<plugin id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
-<plugin id="org.eclipse.persistence.core"/>
-<plugin id="javax.servlet-api" version="3.0.1"/>
-<plugin id="org.eclipse.jetty.jndi.source"/>
 <plugin id="com.eclipsesource.jaxrs.jersey-all" version="2.10.1.SR1"/>
-<plugin id="org.eclipse.jetty.security"/>
-<plugin id="org.apache.aries.blueprint.api.source"/>
-<plugin id="org.eclipse.jetty.security.source"/>
-<plugin id="org.eclipse.jetty.osgi.boot.jsp.source"/>
-<plugin id="org.eclipse.equinox.app"/>
-<plugin id="org.eclipse.jetty.annotations"/>
-<plugin id="javax.inject" version="1.0.0.v20091030"/>
-<plugin id="org.apache.aries.quiesce.api"/>
-<plugin id="org.json"/>
-<plugin id="org.apache.felix.gogo.command" version="0.10.0.v201209301215"/>
-<plugin id="org.eclipse.equinox.cm"/>
-<plugin id="org.eclipse.core.resources"/>
-<plugin id="com.eclipsesource.jaxrs.jersey-all.source" version="2.10.1.SR1"/>
-<plugin id="org.eclipse.jetty.jmx.source"/>
-<plugin id="com.eclipsesource.jaxrs.provider.gson"/>
-<plugin id="org.apache.aries.util"/>
-<plugin id="org.eclipse.persistence.moxy"/>
-<plugin id="org.eclipse.jetty.continuation"/>
-<plugin id="org.apache.jasper.glassfish"/>
-<plugin id="javax.annotation"/>
-<plugin id="org.eclipse.jetty.osgi.boot.source"/>
-<plugin id="com.google.gson.source"/>
-<plugin id="org.eclipse.core.runtime"/>
-<plugin id="org.eclipse.core.expressions"/>
-<plugin id="javax.servlet-api.source" version="3.0.1"/>
-<plugin id="org.eclipse.jetty.osgi.boot.warurl.source"/>
-<plugin id="org.eclipse.jetty.deploy"/>
-<plugin id="org.apache.felix.gogo.shell"/>
-<plugin id="org.eclipse.jetty.servlet"/>
-<plugin id="org.junit"/>
-<plugin id="jetty.home.bundle"/>
-<plugin id="org.eclipse.core.filesystem"/>
-<plugin id="org.eclipse.jetty.nested.source"/>
-<plugin id="org.eclipse.jetty.server.source"/>
-<plugin id="ch.qos.logback.core"/>
-<plugin id="org.slf4j.jcl"/>
-<plugin id="org.eclipse.core.variables"/>
-<plugin id="org.apache.aries.blueprint.core.compatibility.source"/>
-<plugin id="com.eclipsesource.jaxrs.provider.gson.source"/>
-<plugin id="com.google.gson" version="2.2.4"/>
+<plugin id="javax.security.auth.message"/>
+<plugin id="com.eclipsesource.jaxrs.provider.sse.source"/>
+<plugin id="org.eclipse.jetty.continuation.source"/>
+<plugin id="org.eclipse.jetty.websocket"/>
+<plugin id="org.eclipse.jetty.jndi.source"/>
+<plugin id="com.eclipsesource.jaxrs.provider.security.source"/>
 <plugin id="org.eclipse.jetty.plus.source"/>
-<plugin id="com.google.guava"/>
-<plugin id="org.eclipse.jetty.osgi.boot"/>
-<plugin id="org.apache.aries.blueprint.core"/>
-<plugin id="javax.servlet.jsp"/>
-<plugin id="org.eclipse.jetty.monitor"/>
-<plugin id="org.junit4"/>
-<plugin id="org.objectweb.asm"/>
-<plugin id="org.apache.aries.proxy.api"/>
+<plugin id="javax.annotation"/>
+<plugin id="org.objectweb.asm.all"/>
+<plugin id="org.apache.aries.blueprint.core.compatibility.source"/>
 <plugin id="org.eclipse.jetty.osgi.httpservice.source"/>
-<plugin id="org.eclipse.equinox.http.registry"/>
-<plugin id="org.apache.aries.blueprint.api"/>
-<plugin id="org.apache.aries.util.source"/>
-<plugin id="javax.servlet" version="3.0.0.v201112011016"/>
-<plugin id="org.apache.aries.proxy.impl.source"/>
-<plugin id="org.eclipse.core.jobs"/>
-<plugin id="org.eclipse.jetty.io"/>
-<plugin id="com.ibm.icu"/>
-<plugin id="ch.qos.logback.classic"/>
-<plugin id="org.slf4j.jul"/>
-<plugin id="org.eclipse.jetty.servlet.source"/>
-<plugin id="org.eclipse.osgi" version="3.8.1.v20120830-144521"/>
-<plugin id="org.eclipse.jetty.util.source"/>
-<plugin id="org.apache.felix.gogo.runtime" version="0.10.0.v201209301036"/>
-<plugin id="org.apache.aries.quiesce.api.source"/>
-<plugin id="org.apache.felix.gogo.runtime" version="0.10.0.v201209301036"/>
-<plugin id="org.eclipse.jetty.xml"/>
+<plugin id="org.junit"/>
 <plugin id="javax.validation"/>
-<plugin id="org.apache.aries.proxy.api.source"/>
-<plugin id="org.eclipse.core.runtime.compatibility.registry"/>
-<plugin id="org.eclipse.jetty.ajp.source"/>
-<plugin id="org.eclipse.jetty.servlets"/>
-<plugin id="com.eclipsesource.jaxrs.publisher.source"/>
-<plugin id="org.eclipse.jetty.server"/>
-<plugin id="org.slf4j.log4j"/>
-<plugin id="org.apache.taglibs.standard.glassfish"/>
-<plugin id="com.eclipsesource.jaxrs.provider.moxy"/>
+<plugin id="org.eclipse.jetty.jaspi"/>
+<plugin id="org.eclipse.equinox.http.registry.source"/>
+<plugin id="org.eclipse.equinox.registry"/>
 <plugin id="javax.activation" version="1.1.0.v201108011116"/>
-<plugin id="org.apache.felix.gogo.command" version="0.10.0.v201209301215"/>
-<plugin id="org.eclipse.jetty.nested"/>
+<plugin id="org.eclipse.equinox.console"/>
+<plugin id="org.eclipse.jetty.continuation"/>
+<plugin id="org.slf4j.log4j"/>
 <plugin id="org.eclipse.jetty.io.source"/>
-<plugin id="org.eclipse.equinox.ds"/>
-<plugin id="org.eclipse.jetty.http"/>
-<plugin id="org.eclipse.jetty.plus"/>
-<plugin id="org.eclipse.jetty.osgi.boot.jsp"/>
-<plugin id="javax.transaction"/>
-<plugin id="org.eclipse.osgi" version="3.8.1.v20120830-144521"/>
-<plugin id="org.eclipse.jetty.nosql.source"/>
-<plugin id="org.eclipse.jetty.osgi.boot.warurl"/>
-<plugin id="org.eclipse.jetty.jmx"/>
-<plugin id="org.eclipse.persistence.moxy.source"/>
-<plugin id="org.eclipse.equinox.preferences"/>
-<plugin id="org.apache.aries.blueprint.cm.source"/>
-<plugin id="com.eclipsesource.jaxrs.provider.moxy.source"/>
-<plugin id="org.eclipse.jetty.policy"/>
+<plugin id="org.eclipse.jetty.server.source"/>
+<plugin id="org.objectweb.asm"/>
+<plugin id="org.apache.felix.gogo.runtime" version="0.10.0.v201209301036"/>
+<plugin id="com.eclipsesource.jaxrs.publisher"/>
+<plugin id="ch.qos.logback.slf4j"/>
+<plugin id="org.eclipse.equinox.app"/>
+<plugin id="org.eclipse.jetty.rewrite.source"/>
 <plugin id="org.eclipse.osgi.services" version="3.3.100.v20120522-1822"/>
+<plugin id="com.eclipsesource.jaxrs.provider.security"/>
+<plugin id="org.eclipse.equinox.http.jetty.source"/>
+<plugin id="com.eclipsesource.jaxrs.provider.multipart"/>
+<plugin id="com.eclipsesource.jaxrs.jersey-all.source" version="2.10.1.SR1"/>
+<plugin id="javax.inject" version="1.0.0.v20091030"/>
+<plugin id="com.eclipsesource.jaxrs.provider.moxy"/>
+<plugin id="org.eclipse.core.expressions"/>
+<plugin id="org.eclipse.jetty.security.source"/>
+<plugin id="javax.servlet-api.source" version="3.0.1"/>
+<plugin id="org.slf4j.jul"/>
+<plugin id="org.apache.aries.quiesce.api.source"/>
+<plugin id="org.eclipse.equinox.util"/>
 <plugin id="org.eclipse.jetty.webapp"/>
-<plugin id="org.eclipse.persistence.core.source"/>
-<plugin id="org.eclipse.core.runtime.compatibility.auth"/>
-<plugin id="org.hamcrest.core"/>
-<plugin id="javax.servlet.jsp.jstl"/>
-<plugin id="org.eclipse.jetty.jndi"/>
+<plugin id="org.apache.aries.blueprint.api.source"/>
 <plugin id="org.eclipse.jetty.xml.source"/>
-<plugin id="org.eclipse.equinox.http.servlet"/>
+<plugin id="org.apache.aries.proxy.impl"/>
+<plugin id="com.eclipsesource.jaxrs.provider.gson.source"/>
+<plugin id="org.eclipse.jetty.client"/>
+<plugin id="org.eclipse.jetty.osgi.boot.jsp"/>
+<plugin id="org.eclipse.jetty.nosql.source"/>
+<plugin id="org.apache.aries.proxy.api.source"/>
+<plugin id="org.eclipse.jetty.osgi.httpservice"/>
+<plugin id="org.eclipse.jetty.websocket.source"/>
+<plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+<plugin id="javax.el"/>
+<plugin id="org.eclipse.jetty.annotations.source"/>
+<plugin id="org.apache.aries.util.source"/>
+<plugin id="org.apache.felix.gogo.shell"/>
+<plugin id="org.eclipse.jetty.deploy"/>
+<plugin id="org.eclipse.persistence.antlr.source"/>
+<plugin id="com.google.guava"/>
+<plugin id="org.eclipse.equinox.http.servlet.source"/>
+<plugin id="org.eclipse.core.contenttype"/>
+<plugin id="javax.servlet-api" version="3.0.1"/>
+<plugin id="javax.servlet" version="3.0.0.v201112011016"/>
+<plugin id="org.apache.aries.blueprint.api"/>
+<plugin id="org.apache.aries.blueprint.core.source"/>
+<plugin id="org.eclipse.jetty.http.source"/>
+<plugin id="org.eclipse.core.variables"/>
+<plugin id="org.apache.taglibs.standard.glassfish.source"/>
+<plugin id="org.eclipse.equinox.http.registry"/>
+<plugin id="org.hamcrest.core"/>
+<plugin id="org.objectweb.asm.all.source"/>
+<plugin id="org.apache.aries.quiesce.api"/>
+<plugin id="org.eclipse.jetty.util.source"/>
+<plugin id="org.eclipse.osgi" version="3.8.1.v20120830-144521"/>
+<plugin id="org.eclipse.jetty.osgi.boot.source"/>
+<plugin id="ch.qos.logback.classic"/>
+<plugin id="org.json"/>
+<plugin id="org.eclipse.core.commands"/>
+<plugin id="org.eclipse.jetty.xml"/>
+<plugin id="javax.servlet.jsp.jstl"/>
+<plugin id="org.eclipse.jetty.osgi.boot.warurl.source"/>
+<plugin id="org.eclipse.core.runtime"/>
+<plugin id="javax.inject" version="1.0.0.v20091030"/>
+<plugin id="com.eclipsesource.jaxrs.jersey-all" version="2.10.1.SR1"/>
+<plugin id="org.eclipse.equinox.preferences"/>
+<plugin id="org.eclipse.jetty.servlet"/>
+<plugin id="org.eclipse.jetty.client.source"/>
+<plugin id="javax.servlet" version="3.0.0.v201112011016"/>
+<plugin id="org.apache.aries.blueprint.cm"/>
+<plugin id="com.google.gson" version="2.2.4"/>
+<plugin id="org.apache.felix.gogo.command" version="0.10.0.v201209301215"/>
+<plugin id="javax.servlet-api.source" version="3.0.1"/>
+<plugin id="com.eclipsesource.jaxrs.publisher.source"/>
+<plugin id="org.eclipse.persistence.moxy"/>
+<plugin id="org.eclipse.equinox.cm"/>
+<plugin id="org.apache.aries.proxy.impl.source"/>
+<plugin id="org.eclipse.jetty.nested.source"/>
+<plugin id="org.eclipse.jetty.osgi.boot.jsp.source"/>
+<plugin id="org.eclipse.jetty.monitor.source"/>
+<plugin id="org.apache.felix.gogo.runtime" version="0.10.0.v201209301036"/>
+<plugin id="org.eclipse.jetty.plus"/>
 <plugin id="org.eclipse.jetty.servlets.source"/>
+<plugin id="org.eclipse.equinox.http.servlet"/>
+<plugin id="org.apache.aries.proxy.api"/>
+<plugin id="org.apache.aries.blueprint.core"/>
+<plugin id="org.apache.felix.gogo.command" version="0.10.0.v201209301215"/>
+<plugin id="org.eclipse.jetty.osgi.boot.warurl"/>
+<plugin id="org.apache.jasper.glassfish"/>
+<plugin id="org.eclipse.jetty.annotations"/>
+<plugin id="com.ibm.icu"/>
+<plugin id="org.eclipse.osgi.services" version="3.3.100.v20120522-1822"/>
+<plugin id="com.eclipsesource.jaxrs.provider.gson"/>
+<plugin id="jetty.home.bundle"/>
+<plugin id="org.eclipse.jetty.jmx.source"/>
+<plugin id="org.eclipse.jetty.server"/>
+<plugin id="org.eclipse.jetty.io"/>
+<plugin id="org.eclipse.jetty.deploy.source"/>
+<plugin id="org.eclipse.jetty.servlet.source"/>
+<plugin id="org.eclipse.jetty.servlets"/>
+<plugin id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+<plugin id="org.eclipse.jetty.policy"/>
+<plugin id="javax.transaction"/>
+<plugin id="org.eclipse.core.jobs"/>
+<plugin id="org.apache.aries.blueprint.core.compatibility"/>
+<plugin id="org.eclipse.jetty.rewrite"/>
+<plugin id="com.eclipsesource.jaxrs.provider.moxy.source"/>
+<plugin id="com.eclipsesource.jaxrs.jersey-all.source" version="2.10.1.SR1"/>
+<plugin id="org.eclipse.osgi" version="3.8.1.v20120830-144521"/>
+<plugin id="javax.mail"/>
+<plugin id="org.apache.aries.util"/>
+<plugin id="org.eclipse.core.filesystem"/>
+<plugin id="javax.servlet-api" version="3.0.1"/>
+<plugin id="org.apache.jasper.glassfish.source"/>
+<plugin id="org.eclipse.persistence.antlr"/>
+<plugin id="org.eclipse.jetty.webapp.source"/>
+<plugin id="com.eclipsesource.jaxrs.provider.sse"/>
+<plugin id="org.apache.taglibs.standard.glassfish"/>
+<plugin id="com.google.gson.source"/>
+<plugin id="org.eclipse.jetty.jndi"/>
+<plugin id="org.eclipse.jetty.monitor"/>
+<plugin id="com.eclipsesource.jaxrs.provider.multipart.source"/>
+<plugin id="org.eclipse.core.filesystem.win32.x86_64"/>
+<plugin id="org.eclipse.equinox.ds"/>
+<plugin id="org.slf4j.jcl"/>
+<plugin id="org.eclipse.core.resources"/>
+<plugin id="org.apache.aries.blueprint.cm.source"/>
+<plugin id="org.eclipse.jetty.jmx"/>
+<plugin id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+<plugin id="ch.qos.logback.core"/>
+<plugin id="org.eclipse.core.runtime.compatibility.registry"/>
+<plugin id="org.junit4"/>
+<plugin id="javax.activation" version="1.1.0.v201108011116"/>
+<plugin id="org.eclipse.jetty.http"/>
+<plugin id="org.eclipse.persistence.core.source"/>
+<plugin id="org.eclipse.persistence.core"/>
+<plugin id="org.eclipse.jetty.util"/>
+<plugin id="org.eclipse.jetty.jaspi.source"/>
+<plugin id="javax.servlet.jsp"/>
+<plugin id="org.eclipse.persistence.moxy.source"/>
+<plugin id="com.google.gson" version="2.1.0.v201203072145"/>
+<plugin id="org.eclipse.jetty.nested"/>
+<plugin id="org.eclipse.jetty.ajp"/>
+<plugin id="org.eclipse.jetty.security"/>
+<plugin id="org.eclipse.jetty.osgi.boot"/>
+<plugin id="org.eclipse.jetty.ajp.source"/>
+<plugin id="org.eclipse.equinox.common"/>
 </includeBundles>
 </target>
